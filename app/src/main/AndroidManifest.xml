@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sampleapp" >
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tooth_logo_design_vector_illustration_93835_556"
+        android:label="@string/app_name_full_name"
+        android:roundIcon="@drawable/tooth_logo_design_vector_illustration_93835_556"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SampleApp" >
+        <activity
+            android:name=".QuestionsActivity"
+            android:label="@string/app_name_full_name"
+            android:theme="@style/Theme.SampleApp.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".ResultsActivity"
+            android:label="@string/app_name_full_name"
+            android:theme="@style/Theme.SampleApp.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name_full_name"
+            android:theme="@style/Theme.SampleApp.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+    </application>
+
+</manifest>
